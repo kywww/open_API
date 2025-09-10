@@ -1,8 +1,10 @@
 @charset "utf-8";
 
 
+.section_1 {width: 1200px; height: 380px; display: flex; gap: 2.20rem; margin: 0 auto;}
+
 /* slider */
-#slider {width: 917px; height: 405px; background-color: greenyellow; margin: auto;}
+#slider {width: 890px; height: 380px; background-color: greenyellow; margin: auto;}
 
 .swiper {
       width: 100%;
@@ -25,4 +27,39 @@
       object-fit: cover;
     }
 
-    .new {width: 1120px; height: 500px; margin: 50px auto;}
+    .slider_b_btn {display: flex; gap: 0.25rem; z-index: 10; bottom: 0.75rem; background-color: aqua; right: 0.75rem;}
+
+    .slider1_side {width: 274px; height: 380px; background-color: darkcyan;}
+
+    .section_2 {width: 1200px; height: 96px; margin: 0 auto; display: flex; margin-top: 2.20rem; flex-wrap: nowrap;}
+    .section_2_ul {width: 890px; height: 96px; display: flex; justify-content: space-between; align-items: center; font-size: 13px;}
+    .section_2_ul li {width: 68px; text-align: center; flex-shrink: 0;}
+    .section_2_ul a {width: 68px; display: flex; flex-direction: column; align-items: center; gap: 6px; text-align: center;}
+    .section2_nav {width: 274px; height: 96px; margin-left: auto;}
+    .section2_nav_img {width: 100%; height: auto; border-radius: 0.75rem; border-style: solid; overflow: hidden;}
+
+
+    .section_3 {width: 1328px; height: 314px; margin: 0 auto; margin-top: 50px; display: flex;}
+    .section_3_btn1 {border: none; background-color: white;}
+    .section_3_box {width: 1200px; height: 314px; background-color: aquamarine; margin: 0 auto; display: flex;}
+    .section_3_box1 {width: 1200px; height: 34px; margin: 0 auto; display: flex;}
+    .section_3_box1_1 {display: flex;}
+    .section_3_box1_1_h2 {width: 130px; height: 34px;}
+    .section_3_box1_1_div {display: flex; padding-top: 10px; gap: 20px; font-size: 13px; background-color: white;}
+    .section_3_box1_1_div button {border: none; color: #666; background-color: white;}
+    .section_3_box1_1_a {margin-left: auto; padding-top: 10px; font-weight: 700;}
+    /* .section_3_box2 {width: 1200px; height: 260px; display: flex;} */
+
+    .section_4 {width: 1200px; height: 180px; margin: 0 auto; margin-top: 5rem; gap: 1rem; display: flex;}
+    .section_4_a1 {border-radius: 0.75rem; overflow: hidden;}
+    .section_4_a2 {border-radius: 0.75rem; overflow: hidden;}
+
+    .section_5 {width: 1328px; height: 378px; background-color: orange; margin: 0 auto;  margin-top: 5rem;}
+    .section_5_box1 {width: 1200px; height: 34px; margin: 0 auto; display: flex; background-color: tomato;}
+    .section_5_box1_h2 {width: 1145px; height: 34px; margin: 0 auto;}
+    .section_5_box1_a {margin-left: auto; padding-top: 10px; font-weight: 700;}
+    .section_5_box2 {width: 1328px; height: 324px; margin: 0 auto; align-items: center;}
+    .section_5_box2 div {width: 1328px; height: 324px; margin: 5px auto; display: flex;}
+    
+    
+    .new {width: 1328px; height: 324px; margin: 50px auto;}
