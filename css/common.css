@@ -9,12 +9,12 @@
 
 
 
-@font-face {
+/* @font-face {
     font-family: 'Pretendard';
     src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
     font-weight: 700;
     font-display: swap;
-}
+} */
 
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul, ol {list-style: none;}
@@ -75,11 +75,17 @@ footer .container {display: flex;}
 
 
 
-
-
-
 /* footer */
-footer {width: 100%; height: 288px; background-color: orange;}
+footer {width: 100%; height: 288px;}
 .container2 {width: 1200px; height: 211px; display: flex; margin: auto;}
-.footer_r {width: 766px; height: 211px; background-color: blue; margin: auto;}
-.footer_l {width: 350px; height: 205px; background-color: cadetblue; margin: auto;}
+.footer_r {width: 766px; height: 211px; margin: auto;}
+.footer_l {width: 350px; height: 205px; margin: auto;}
+.footer_r ul {display: flex; margin-top: 0.75rem; flex-wrap: wrap; margin-bottom: 0.75rem;}
+.footer_r_span {width: 766px; height: 48px; margin-top: 2rem;}
+
+.footer_l_1 {display: flex; gap: 1rem; align-items: center; margin-bottom: 1.75rem; justify-content: space-between; width: 350px; height: 40px;}
+.footer_l_1 button {width: 200px; height: 40px; border-style: 0.3px solid #bbb; text-align: left; background-color: white;}
+.footer_l_2 {display: flex; gap: 1rem; align-items: center; margin-bottom: 1.75rem; font-size: small;}
+.footer_l_2 a {border-style: 2px solid #333; border-width: 1px;} 
+.footer_l_3 {font-size: x-small;}
+.footer_l_4 {display: flex; font-size: small; margin-top: 10px; gap: 10px;}

@@ -29,7 +29,16 @@
 
     .slider_b_btn {display: flex; gap: 0.25rem; z-index: 10; bottom: 0.75rem; background-color: aqua; right: 0.75rem;}
 
-    .slider1_side {width: 274px; height: 380px; background-color: darkcyan;}
+    .slider1_side {width: 274px; height: 380px; border-style: 1px solid #333; border-radius: 0.75rem;}
+    .slider1_side_slide {width: 274px; height: 330px;}
+    .slider1_side_slide_t {width: 274px; height: 200px;}
+    .slider1_side_slide_t img { border-radius: 0.75rem; border-style: 1px solid #bbb;}
+    .slider1_side_slide_b {width: 274px; height: 130px; text-align: center; padding-block: 1.75rem;}
+    .slider1_side_slide_b p {font-size: larger; font-weight: 700;}
+    .slider1_side_slide2 {width: 274px; height: 50px; display: flex; justify-content: center; gap: 0.9rem;}
+    .slider1_side_slide2 button {border: none; background-color: white; align-items: center;}
+    .slider1_side_slide2 p {padding-top: 15px;}
+
 
     .section_2 {width: 1200px; height: 96px; margin: 0 auto; display: flex; margin-top: 2.20rem; flex-wrap: nowrap;}
     .section_2_ul {width: 890px; height: 96px; display: flex; justify-content: space-between; align-items: center; font-size: 13px;}
@@ -59,7 +68,7 @@
     .section_5_box1_h2 {width: 1145px; height: 34px; margin: 0 auto;}
     .section_5_box1_a {margin-left: auto; padding-top: 10px; font-weight: 700;}
     .section_5_box2 {width: 1328px; height: 324px; margin: 0 auto; align-items: center;}
-    .section_5_box2 div {width: 1328px; height: 324px; margin: 5px auto; display: flex;}
+    .section_5_box2 >div {width: 1200px; height: 325px; margin: 5px auto; display: flex;}
     
     
     .new {width: 1328px; height: 324px; margin: 50px auto;}
