@@ -6,12 +6,23 @@
 /* slider */
 #slider {width: 890px; height: 380px; background-color: greenyellow; margin: auto;}
 
-.swiper {
-      width: 100%;
-      height: 100%;
-    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
 
     .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      /* padding: 10px; */
+      gap: 10px;
+    }
+
+    .swiper-slide_book {
       text-align: center;
       font-size: 18px;
       background: #444;
@@ -27,9 +38,15 @@
       object-fit: cover;
     }
 
+    .mySwiper_2 {width: 274px; height: 380px; margin: 0 auto;}
+    .swiper_content {width: 274px; height: 200px; margin-bottom: 20px;}
+    .swiper_text {width: 274px; height: 130px; text-align: center; padding: 10px;}
+    .swiper_number {width: 274px; height: 18px;}
+
+
     .slider_b_btn {display: flex; gap: 0.25rem; z-index: 10; bottom: 0.75rem; background-color: aqua; right: 0.75rem;}
 
-    .slider1_side {width: 274px; height: 380px; border-style: 1px solid #333; border-radius: 0.75rem;}
+    .slider1_side {width: 274px; height: 380px; border: 0.1px solid #eaeaea; border-radius: 0.75rem;}
     .slider1_side_slide {width: 274px; height: 330px;}
     .slider1_side_slide_t {width: 274px; height: 200px;}
     .slider1_side_slide_t img { border-radius: 0.75rem; border-style: 1px solid #bbb;}
@@ -48,7 +65,7 @@
     .section2_nav_img {width: 100%; height: auto; border-radius: 0.75rem; border-style: solid; overflow: hidden;}
 
 
-    .section_3 {width: 1328px; height: 314px; margin: 0 auto; margin-top: 50px; display: flex;}
+    .section_3 {width: 1328px; height: 314px; margin: 0 auto; margin-top: 50px;}
     .section_3_btn1 {border: none; background-color: white;}
     .section_3_box {width: 1200px; height: 314px; background-color: aquamarine; margin: 0 auto; display: flex;}
     .section_3_box1 {width: 1200px; height: 34px; margin: 0 auto; display: flex;}
@@ -58,13 +75,54 @@
     .section_3_box1_1_div button {border: none; color: #666; background-color: white;}
     .section_3_box1_1_a {margin-left: auto; padding-top: 10px; font-weight: 700;}
     /* .section_3_box2 {width: 1200px; height: 260px; display: flex;} */
+    /* .left-swiper,
+    .right-swiper {
+      width: 1200px;
+      margin: 0 auto 30px;
+    }
+
+    .slider-container {display: flex; width: 1200px; height: 260px; margin: 0 auto; gap: 20px;}
+
+    .swiper {
+      width: 1200px; height: 260px;
+      margin-top: 50px;
+    }
+
+
+    .mySwiperLeft {
+      width: 800px;
+      height: 260px;
+      margin-right: 20px;
+    }
+
+    .mySwiperLeft .swiper-slide {
+      background-color: #f0f0f0;
+      padding: 20px;
+    }
+
+    .mySwiperRight {
+      width: 400px;
+      height: 260px;
+
+    }
+
+    .mySwiperRight .swiper-slide {
+      background-color: #d0e0f0;
+      padding: 15px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #333;
+    } */
+
 
     .section_4 {width: 1200px; height: 180px; margin: 0 auto; margin-top: 5rem; gap: 1rem; display: flex;}
     .section_4_a1 {border-radius: 0.75rem; overflow: hidden;}
     .section_4_a2 {border-radius: 0.75rem; overflow: hidden;}
 
-    .section_5 {width: 1328px; height: 378px; background-color: orange; margin: 0 auto;  margin-top: 5rem;}
-    .section_5_box1 {width: 1200px; height: 34px; margin: 0 auto; display: flex; background-color: tomato;}
+    .section_5 {width: 1328px; height: 378px; margin: 0 auto;  margin-top: 5rem;}
+    .section_5_box1 {width: 1200px; height: 34px; margin: 0 auto; display: flex;}
     .section_5_box1_h2 {width: 1145px; height: 34px; margin: 0 auto;}
     .section_5_box1_a {margin-left: auto; padding-top: 10px; font-weight: 700;}
     .section_5_box2 {width: 1328px; height: 324px; margin: 0 auto; align-items: center;}
