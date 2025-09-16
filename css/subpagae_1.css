@@ -1,0 +1,71 @@
+header h1 {
+    margin: 0 auto;
+    /* background-color: orange; */
+    width: 1200px;
+    height: 278px;
+}
+.section_1 {
+    width: 1200px;
+    height: 825px;
+    /* background-color: aquamarine; */
+    margin: 0 auto;
+    /* display: flex; */
+}
+.book_content {
+    width: 1200px;
+    height: 73px;
+    text-align: center;
+    padding: 20px;
+}
+.book_content1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 10px ;
+}
+.content_box{
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+}
+.sub_box {
+    width: 380px;
+    height: 673px;
+    /* background-color: teal; */
+    margin-left: 70px
+}
+.sub_box img {
+    width: 380px;
+    height: 572px;
+}
+table {
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 20px;   
+}
+.sub_box_2 table td {
+    padding: 10px 90px;
+    line-height: 1.6;
+    /* border-top: 1px solid #eaeaea; */
+    border-bottom: 1px solid #eaeaea;
+}
+.contextbox {
+    width: 1200px;
+    height: 150px;
+    /* background-color: tomato; */
+    margin: 0 auto;
+    font-size: 20px;
+    border: 1px solid green;
+    border-radius: 7px;
+    padding: 10px;
+}
+#tmpBox {
+    width: 1200px;
+    height: 400px;
+    /* background-color: cornflowerblue; */
+    margin: 0 auto;
+    border: 1px solid green;
+    border-radius: 7px;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 20px;
+}

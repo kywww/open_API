@@ -145,7 +145,7 @@
     .section_7_box2 {width: 1328px; height: 324px; margin: 0 auto; align-items: center;}
     .section_7_box2 >div {width: 1200px; height: 325px; margin: 5px auto; display: flex;}
 
-    .section_fin {width: 100%; height: 62px; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; display: flex; margin: 0 auto; margin-top: 90px;}
+    /* .section_fin {width: 100%; height: 62px; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; display: flex; margin: 0 auto; margin-top: 90px;}
     .section_fin ul, li {display: flex; gap: 30px; margin: 0 auto; text-align: center; margin-top: 10px;}
     .section_fin_li_1 {width: 600px; height: 22px; }
     .section_fin_li_1_span {width: 61px; height: 22px; font-weight: bold;}
@@ -156,6 +156,6 @@
     .section_fin_li_2_span {width: 70px; height: 22px; font-weight: bold;}
     .section_fin_li_2_div {width: 501px; height: 22px; display: flex;}
     .section_fin_li_2_div_a1 {width: 408px; height: 22px; overflow: hidden; white-space: nowrap; display: block; text-overflow: ellipsis;}
-    .section_fin_li_2_div_a2 {width: 56px; height: 22px; display: block;}
+    .section_fin_li_2_div_a2 {width: 56px; height: 22px; display: block;} */
     
     .new {width: 1328px; height: 324px; margin: 50px auto;}
