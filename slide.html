@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Swiper Loop Test</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <style>
+    #slider {
+      width: 890px;
+      height: 380px;
+      margin: auto;
+      position: relative;
+    }
+
+    .swiper-slide {
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body>
+
+<div id="slider">
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2025/09/05/71482/4.png');"></div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2025/09/02/46722/PC_new.png');">Slide 2</div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2025/09/04/67305/1-1-2_890x380.png');">Slide 3</div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2025/09/12/72441/new_0912.png');">Slide 4</div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/display/i_890_380%201_d2241633299240ed93fd3b6184375636.jpg');">Slide 5</div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/pmtn/2025/event/31509a71ce4440f4829c6bcb2efaa151.jpg');">Slide 6</div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/pmtn/2025/event/8bccb1d3e8f24f4d86bc7e80ae25141c.jpg');">Slide 7</div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/display/i_890_380_115e0f2b76584bdca6221815acfd7e0e.jpg');">Slide 8</div>
+      <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/display/i_890_380_8e544a180e63404496d2eca701555b0c.jpg');">Slide 9</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  });
+</script>
+
+</body>
+</html>

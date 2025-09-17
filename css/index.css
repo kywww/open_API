@@ -38,11 +38,14 @@
       object-fit: cover;
     }
 
+
+    /* .swiper-button-next_1, .swiper-button-prev_1 {
+      
+    } */
     .mySwiper_2 {width: 274px; height: 380px; margin: 0 auto;}
     .swiper_content {width: 274px; height: 200px; margin-bottom: 20px;}
     .swiper_text {width: 274px; height: 130px; text-align: center; padding: 10px;}
     .swiper_number {width: 274px; height: 18px;}
-
 
     .slider_b_btn {display: flex; gap: 0.25rem; z-index: 10; bottom: 0.75rem; background-color: aqua; right: 0.75rem;}
 
