@@ -38,6 +38,14 @@
       object-fit: cover;
     }
 
+    /* .mySwiper > .swiper_controls_1 {width: 200px; height: 20px; border: 1px solid #333;} */
+    .mySwiper > .swiper_controls_1 .swiper-button-next {bottom: 0; top: auto; right: 350px;}
+    .mySwiper > .swiper_controls_1 .swiper-button-prev {bottom: 0; top: auto; left: 350px;}
+    .mySwiper > .swiper_controls_1 .swiper-button-next::after {font-size: 15px; color: darkcyan; font-weight: 900; border: 2px solid #333; border-radius: 50%; padding: 10px;}
+    .mySwiper > .swiper_controls_1 .swiper-button-prev::after {font-size: 15px; color: darkcyan; font-weight: 900;border: 2px solid #333; border-radius: 50%; padding: 10px;}
+    /* .mySwiper > .swiper-controls_1 .swiper-pagination {top: 0; left: 100px; }
+    .mySwiper > .swiper-controls_1 .swiper-pagination::after {text-align: right;} */
+
 
     /* .swiper-button-next_1, .swiper-button-prev_1 {
       
@@ -45,7 +53,7 @@
     .mySwiper_2 {width: 274px; height: 380px; margin: 0 auto;}
     .swiper_content {width: 274px; height: 200px; margin-bottom: 20px;}
     .swiper_text {width: 274px; height: 130px; text-align: center; padding: 10px;}
-    .swiper_number {width: 274px; height: 18px;}
+    .swiper_number {width: 274px; height: 35px; margin-bottom: 5px;}
 
     .slider_b_btn {display: flex; gap: 0.25rem; z-index: 10; bottom: 0.75rem; background-color: aqua; right: 0.75rem;}
 
@@ -58,6 +66,13 @@
     .slider1_side_slide2 {width: 274px; height: 50px; display: flex; justify-content: center; gap: 0.9rem;}
     .slider1_side_slide2 button {border: none; background-color: white; align-items: center;}
     .slider1_side_slide2 p {padding-top: 15px;}
+    .mySwiper_2 .swiper-controls {display: flex; justify-content: center; align-items: center; gap: 12px; margin-top: 16px;}
+    .mySwiper_2 > .swiper-controls .swiper-button-next {bottom: 0; top: auto; right: 70px; color: #333;}
+    .mySwiper_2 > .swiper-controls .swiper-button-next::after {font-size: 20px;}
+    .mySwiper_2 > .swiper-controls .swiper-button-prev {bottom: 0; top: auto; left: 70px; color: #333;}
+    .mySwiper_2 > .swiper-controls .swiper-button-prev::after {font-size: 20px;}
+    .mySwiper_2 > .swiper-controls .swiper-pagination {margin-top: 10px;}
+    
 
 
     .section_2 {width: 1200px; height: 96px; margin: 0 auto; display: flex; margin-top: 2.20rem; flex-wrap: nowrap;}
@@ -68,7 +83,7 @@
     .section2_nav_img {width: 100%; height: auto; border-radius: 0.75rem; border-style: solid; overflow: hidden;}
 
 
-    .section_3 {width: 1328px; height: 314px; margin: 0 auto; margin-top: 50px;}
+    .section_3 {width: 1328px; height: 314px; margin: 0 auto; margin-top: 60px;}
     .section_3_btn1 {border: none; background-color: white;}
     .section_3_box {width: 1200px; height: 314px; margin: 0 auto;}
     .section_3_box1 {width: 1200px; height: 34px; margin: 0 auto; display: flex;}
@@ -120,10 +135,13 @@
     }
     .leftswiper_content {width: 730px; height: 262ppx; display: flex;}
     .mySwiperLeft img {width: 180px; height: 260px;}
-    .leftswiper_text {width: 528px; height: 146px; margin-top: 30px; text-align: left; padding-left: 20px; font-size: large; padding-top: 20px;}
+    .leftswiper_text {width: 528px; height: 146px; margin-top: 30px; text-align: left; padding-left: 20px; font-size: 23px; padding-top: 20px;}
+    .leftswiper_bookinfo {width: 500px; height: 100px; margin-top: 50px; padding: 10px; line-height: 1.6; font-size: 17px; margin-left: 10px; color: #777;}
+    .swiper-button-prev.left-prev {right: 20px;}
+    .swiper-button-prev.left-prev::after {font-size: 20px; border: 1px solid #eee; border-radius: 50%; padding: 10px; color: #bbb;}
 
 
-    .section_4 {width: 1200px; height: 180px; margin: 0 auto; margin-top: 5rem; gap: 1rem; display: flex;}
+    .section_4 {width: 1200px; height: 180px; margin: 0 auto; margin-top: 50px; gap: 20px; display: flex;}
     .section_4_a1 {border-radius: 0.75rem; overflow: hidden;}
     .section_4_a2 {border-radius: 0.75rem; overflow: hidden;}
 
@@ -148,17 +166,8 @@
     .section_7_box2 {width: 1328px; height: 324px; margin: 0 auto; align-items: center;}
     .section_7_box2 >div {width: 1200px; height: 325px; margin: 5px auto; display: flex;}
 
-    /* .section_fin {width: 100%; height: 62px; border-top: 1px solid #eaeaea; border-bottom: 1px solid #eaeaea; display: flex; margin: 0 auto; margin-top: 90px;}
-    .section_fin ul, li {display: flex; gap: 30px; margin: 0 auto; text-align: center; margin-top: 10px;}
-    .section_fin_li_1 {width: 600px; height: 22px; }
-    .section_fin_li_1_span {width: 61px; height: 22px; font-weight: bold;}
-    .section_fin_li_1_div {width: 501px; height: 22px; display: flex;}
-    .section_fin_li_1_div_a1 {width: 441px; height: 22px; display: block; text-align: left;}
-    .section_fin_li_1_div_a2 {width: 56px; height: 22px; display: block; margin-left: auto;}
-    .section_fin_li_2 {width: 600px; height: 22px;}
-    .section_fin_li_2_span {width: 70px; height: 22px; font-weight: bold;}
-    .section_fin_li_2_div {width: 501px; height: 22px; display: flex;}
-    .section_fin_li_2_div_a1 {width: 408px; height: 22px; overflow: hidden; white-space: nowrap; display: block; text-overflow: ellipsis;}
-    .section_fin_li_2_div_a2 {width: 56px; height: 22px; display: block;} */
+    .section_8 { width: 1200px; height: 180px; margin: 0 auto; margin-top: 50px; display: flex; gap: 20px;}
+    .section_8_a1 {border-radius: 0.75rem; overflow: hidden;}
+    .section_8_a2 {border-radius: 0.75rem; overflow: hidden;}
     
     .new {width: 1328px; height: 324px; margin: 50px auto;}

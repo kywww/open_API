@@ -9,6 +9,8 @@
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
 </head>
 <body>
     <header> 
@@ -106,9 +108,11 @@
                     <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/display/i_890_380_115e0f2b76584bdca6221815acfd7e0e.jpg');"></div>
                     <div class="swiper-slide" style="background: url('https://contents.kyobobook.co.kr/display/i_890_380_8e544a180e63404496d2eca701555b0c.jpg');"></div>
                 </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination_1"></div>
+                <div class="swiper_controls_1">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     <div class="slider1_side">
@@ -161,6 +165,7 @@
                             <br>
                             <p style="font-size: small;">오늘만 이 가격 9,900원!</p>
                     </div>
+                    <div class="slide_number"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper_content">
@@ -172,6 +177,7 @@
                             <br>
                             <p style="font-size: small;">전과목 무제한 수강 + 상품권</p>
                     </div>
+                    <div class="slide_number"></div>
                 </div>
                 <div class="swiper-slide">
                     <div class="swiper_content">
@@ -183,11 +189,14 @@
                             <br>
                             <p style="font-size: small;">직장인 체력 전문 코치 백관장의 첫 책</p>
                     </div>
+                    <div class="slide_number"></div>
                 </div>
             </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-controls">
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
         </div>
     </div>
@@ -228,7 +237,8 @@
                                     </div>
                                     <div class="leftswiper_text">
                                         <p><a href="./sub_page_1.html">백 년의 질문, 베스트셀러 필사 노트</a></p>
-                                    </div>
+                                        <div class="leftswiper_bookinfo"></div>
+                                    </div> 
                                 </div>                                
                             </div>
                             <div class="swiper-slide">
@@ -238,6 +248,7 @@
                                     </div>
                                     <div class="leftswiper_text">
                                         <p>마이크 샌델 정의란 무엇인가</p>
+                                         <div class="leftswiper_bookinfo"></div>
                                     </div>
                                 </div> 
                             </div>
@@ -248,7 +259,9 @@
                                     </div>
                                     <div class="leftswiper_text">
                                         <p>백년의 기억, 베스트셀러 속 명언 800</p>
+                                        <div class="leftswiper_bookinfo"></div>
                                     </div>
+                                    
                                 </div> 
                             </div>
                             <div class="swiper-slide">
@@ -258,6 +271,7 @@
                                     </div>
                                     <div class="leftswiper_text">
                                         <p>스티브니슨의 캔들차트 투자기법(리커버판)</p>
+                                         <div class="leftswiper_bookinfo"></div>
                                     </div>
                                 </div> 
                             </div>
@@ -268,6 +282,7 @@
                                     </div>
                                     <div class="leftswiper_text">
                                         <p>신토익 고득점 2주 벼락치기</p>
+                                         <div class="leftswiper_bookinfo"></div>
                                     </div>
                                 </div>
                             </div>
@@ -278,6 +293,7 @@
                                     </div>
                                     <div class="leftswiper_text">
                                         <p>조용한 믿음의 힘</p>
+                                         <div class="leftswiper_bookinfo"></div>
                                     </div>
                                 </div>
                             </div>
@@ -298,9 +314,12 @@
                             <div class="swiper-slide"></div>
                             <div class="swiper-slide"></div>
                             <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
+                            <div class="swiper-slide"></div>
                         </div>
                         <!-- 화살표 버튼 -->
-                        <div class="swiper-button-next right-next"></div>
+                            <div class="swiper-button-next right-next"></div>
                         <!-- <div class="swiper-button-prev right-prev"></div> -->
                         </div>
                     </div>
@@ -389,28 +408,15 @@
         </div>
     </section>
 
-    <!-- <section class="section_fin">
-        <ul class="section_fin_ul"> 
-            <li class="section_fin_li_1">
-                <span class="section_fin_li_1_span">
-                    공지사항
-                </span>
-                <div class="section_fin_li_1_div">
-                    <a href="https://www.kyobobook.co.kr/cscenter/notice/1006236" class="section_fin_li_1_div_a1">ReadLog 서비스 이관 안내(08/29)</a> 
-                    <a href="https://www.kyobobook.co.kr/cscenter/notice" class="section_fin_li_1_div_a2">더보기 +</a> 
-                </div>
-            </li>
-            <li class="section_fin_li_2">
-                <span class="section_fin_li_2_span">
-                    당첨자발표
-                </span>
-                <div class="section_fin_li_2_div">
-                    <a href="https://event.kyobobook.co.kr/winner/detail/1006322" class="section_fin_li_2_div_a1">[비즈니스]『재태크농부의 올라운드 투자』출간 기념 기대평 이벤트 당첨자 발표</a> 
-                    <a href="https://event.kyobobook.co.kr/winner" class="section_fin_li_2_div_a2">더보기 +</a> 
-                </div>
-            </li>
-        </ul>
-    </section> -->
+   <section class="section_8">
+    <a target="_self" class="section_8_a1" href="http://imac.kyobobook.co.kr/click/INK/ink_wel_new/ink_wel@wel_07_1?adsno=166610&amp;ctvno=130276&amp;clkno=130316">
+        <img alt="에이지테크(AgeTech)" fetchpriority="auto" loading="lazy" width="600" height="180" decoding="async" data-nimg="1" class="transition-[transform, opacity] duration-300 ease-in-out opacity-100" src="https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2025/09/08/70142/2st2.png" style="color: transparent;">
+    </a>
+    <a target="_self" class="section_8_a2" href="http://imac.kyobobook.co.kr/click/INK/ink_wel_new/ink_wel@wel_07_2?adsno=160477&amp;ctvno=130949&amp;clkno=130990">
+        <img alt="자본주의자 선언" fetchpriority="auto" loading="lazy" width="600" height="180" decoding="async" data-nimg="1" class="transition-[transform, opacity] duration-300 ease-in-out opacity-100" src="https://contents.kyobobook.co.kr/advrcntr/IMAC/creatives/2025/09/18/72607/welwelmiddle.jpg" style="color: transparent;">
+    </a>
+</section>
+
     <footer>
         <section class="section_fin">
         <ul class="section_fin_ul"> 
@@ -458,9 +464,13 @@
     <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
+        pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction:false
         },
         navigation: {
@@ -476,7 +486,7 @@
       },
       loop: true,
       autoplay: {
-            delay: 3000,
+            delay: 6000,
             disableOnInteraction:false
         },
       navigation: {
@@ -795,6 +805,53 @@
         }
 
         bookData4();
+
+        
+    
+    document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.swiper-slide');
+
+  const apiKey = "edc8b7a1152b091d393e1922c066dc45"; // ← 네 키 맞음
+
+  slides.forEach(slide => {
+    const titleElement = slide.querySelector('.leftswiper_text p');
+    const infoDiv = slide.querySelector('.leftswiper_bookinfo');
+
+    if (!titleElement || !infoDiv) return;
+
+    const query = titleElement.textContent.trim();
+    if (!query) return;
+
+    fetch(`https://dapi.kakao.com/v3/search/book?query=${encodeURIComponent(query)}&size=1`, {
+      headers: {
+        Authorization: `KakaoAK ${apiKey}`
+      }
+    })
+    .then(res => res.json())
+    .then(data => {
+      const book = data.documents?.[0];
+      if (!book) {
+        infoDiv.innerHTML = `<p>정보 없음</p>`;
+        return;
+      }
+
+      const authors = book.authors?.join(', ') ;
+      const publisher = book.publisher || '출판사 없음';
+      const price = book.price || 0;
+
+      infoDiv.innerHTML = `
+        <p>출판사: ${publisher}</p>
+        <p>정가: ${price.toLocaleString()}원</p>
+      `;
+    })
+    .catch(err => {
+      console.error("API 오류:", err);
+      infoDiv.innerHTML = `<p>정보 오류</p>`;
+    });
+  });
+});
+
+    
   </script>
   <script src="./js/script copy 3.js"></script>
 </body>
