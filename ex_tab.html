@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab - Vanilla JS</title>
+
+    <style>
+        * {margin: 0; padding: 0; box-sizing: border-box;}
+        ul, ol, li {list-style: none;}
+
+        section {width: 1100px; height: 350px; margin: 0 auto; position: relative;}
+        .tab_menu {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            z-index: 2;
+        }
+        .tab_menu li {
+            width: 200px;
+            line-height: 50px;
+            border: 1px solid #aaa;
+            text-align: center;
+            border-bottom: 0;
+        }
+        .active {
+            background-color: #eee;
+            border-bottom: 1px solid #eee;
+        }
+
+        .tabcontent {
+            width: 100%;
+            height: 300px;
+            position: absolute;
+            left: 0;
+            bottom: 0.5px;
+            background-color: #eee;
+            border-top: 1px solid #aaa;
+        }
+    </style>
+  </head>
+
+  <body>
+    <section>
+        <ul class="tab_menu">
+            <li class="active">tab1</li>
+            <li>tab2</li>
+        </ul>
+
+        <div class="tabcontent"></div>
+        <div class="tabcontent"></div>
+    </section>  
+
+    <script>
+        const tabMenu = document.querySelectorAll('.tab_menu li');
+        const tabContent = document.querySelectorAll('.tabcontent');
+
+        tabMenu.forEach((tm,i) => {
+            tm.addEventListener('click', () => {
+                // 모든 탭 메뉴에서 'active' 클래스 제거
+                tabMenu.forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // 클릭한 탭 메뉴에만 'active' 클래스 추가
+                tm.classList.add('active');
+
+                // 탭에 해당하는 리스트 보이고, 나머지는 숨기기
+                tabContent.forEach((tc,j) => {
+                    tc.style.display = (i == j) ? 'flex' : 'none';
+                });
+            });
+        });
+    </script>
+  </body>
+</html>

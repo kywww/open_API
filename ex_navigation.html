@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiper ex</title>
+     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" /> -->
+    <style>
+      /* .swiper_contain {width: 800px; height: 500px; margin: 0 auto;} */
+      /* .mySwiper {width: 800px; height: 380px; margin: 0 auto; background-color: orange;} */
+      /* .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background-color: #555;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      } */
+      .swiper {
+      width: 800px;
+      height: 500px;
+      overflow: hidden;
+      position: relative;
+      }
+
+      .swiper-wrapper {
+        display: flex;           /* 슬라이드 가로 배치 */
+        transition: transform 0.3s ease;
+      }
+
+      .swiper-slide {
+        flex: 0 0 100%;          /* 슬라이드 하나 너비 */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 18px;
+        background-color: #555;
+        width: 800px;
+        height: 500px;
+      }
+
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        background-color: rgba(255,255,255,0.5);
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 10;
+       }
+       .swiper-button-next::after {content: '>';}
+
+        .swiper-button-next { right: 10px; }
+        .swiper-button-prev { left: 10px; }
+
+    </style>
+  </head>
+  <body>
+    <div class="swiper_contain">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper_controls_1">
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
