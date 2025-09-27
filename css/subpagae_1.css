@@ -48,27 +48,42 @@ table {
     /* border-top: 1px solid #eaeaea; */
     border-bottom: 1px solid #eaeaea;
 }
-.span_list {width: 1200px; height: 71px; display: flex; gap: 30px; margin: 0 auto; font-size: 20px; color: #777; text-align: center;}
+.span_list {width: 1200px; height: 40px; display: flex; gap: 30px; margin: 0 auto; font-size: 20px; color: #777; text-align: center; padding-left: 20px;}
+.section_2 {
+    width: 1200px;
+    height: 1700px;
+    /* background-color: whitesmoke; */
+    margin: 0 auto;
+}
 .contextbox {
     width: 1200px;
-    height: 150px;
+    height: 250px;
     /* background-color: tomato; */
     margin: 0 auto;
     font-size: 20px;
     /* border: 1px solid green; */
     /* border-radius: 7px; */
-    padding: 10px;
-    margin-top: 50px;
+    padding: 40px;
+    margin-top: 10px;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+
 }
-.hr_1 {width: 1200px; margin: 0 auto;}
+
+/* .hr_1 {width: 1000px; margin: 0 auto;} */
 #tmpBox {
     width: 1200px;
-    height: 400px;
+    height: 1390px;
     /* background-color: cornflowerblue; */
     margin: 0 auto;
     /* border: 1px solid green; */
     /* border-radius: 7px; */
-    padding: 10px;
+    padding: 30px;
     margin-top: 30px;
     font-size: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #eaeaea;
+    border-radius: 20px;
+    padding-bottom: 30px;
+
 }
