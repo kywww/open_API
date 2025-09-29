@@ -98,7 +98,7 @@
         </div>
         <div class="content_box">
             <div class="sub_box">
-                
+                <img src="./img/bs1.jpg" alt="베스트셀러1">
             </div>
 
             <div class="sub_box_2">
@@ -126,12 +126,14 @@
         <sapn>리뷰</sapn>
         <sapn>교환/반품/품절</sapn>
     </div>
-    <hr>
+    <!-- <hr> -->
     <section class="section_2">
         <div class="contextbox"></div>
-        <hr class="hr_1">
+        <!-- <hr class="hr_1"> -->
         <div id="tmpBox"></div>
     </section>
+
+    
     <footer>
         <section class="section_fin">
         <ul class="section_fin_ul"> 
@@ -206,12 +208,14 @@
                 const { title, thumbnail, authors, price, contents } = book;
 
                 // 요소 생성 및 추가
-                subBox.innerHTML = `
-                <img src="${thumbnail}">
-                `
+                // subBox.innerHTML = `
+                // <img src="${thumbnail}">
+                // `
                 priceNum.textContent += price + "원";
 
-                contextBox.innerHTML = `<h6>${authors[0]}</h6>
+                contextBox.innerHTML = `
+                <h3>저자의 말</h3>
+                <h6>${authors && authors.length > 0 ? authors[0] : ""}</h6>
                 <p>${contents}</p>
                 <span>자세히보기</span>
                 `
